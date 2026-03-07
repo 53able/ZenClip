@@ -1,0 +1,21 @@
+{
+  "name": "zen-clip",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt prepare && tsgo --noEmit && wxt build && node scripts/ascii-content.mjs && echo '' && echo '→ Chrome で読み込むパス: .output/zen-clip/'",
+    "typecheck": "wxt prepare && tsgo --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "@typescript/native-preview": "latest",
+    "@wxt-dev/auto-icons": "^1.1.1",
+    "wxt": "latest"
+  },
+  "dependencies": {
+    "defuddle": "^0.3.0"
+  }
+}
