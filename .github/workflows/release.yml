@@ -9,6 +9,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # リリース作成・アセットアップロードに必要
     steps:
       - name: Checkout
         uses: actions/checkout@v4
