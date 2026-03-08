@@ -32,6 +32,17 @@ npm run build
 
 手順: Chrome「拡張機能」→「デベロッパーモード」ON →「パッケージ化されていない拡張機能を読み込む」→ **`.output/zen-clip` フォルダを選択**。
 
+## リリース
+
+`v*` 形式のタグをプッシュすると GitHub Actions がビルドし、GitHub Release に拡張 ZIP を添付する。
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+[Releases](https://github.com/53able/ZenClip/releases) から ZIP をダウンロードし、解凍したフォルダを Chrome の「パッケージ化されていない拡張機能を読み込む」で指定する。
+
 ## アイコンのモチーフ
 
 ツールバーアイコンは **円相（えんそう / Enso）** をモチーフにしている。禅で用いられる「一筆で描いた開いた円」で、雑念を捨て本文だけを取り出すという ZenClip のコンセプト（Zen ＋ Clip）と重ねている。和紙風の地に墨で描いた意匠で、シンプルに「本文だけを写す」イメージを表している。
